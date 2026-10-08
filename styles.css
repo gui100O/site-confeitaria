@@ -497,3 +497,74 @@ footer a:hover {
         max-width: 100%;
     }
 }
+
+
+/* VISUAL UPDATE — Confeitaria da Dona Laura / pastel editorial */
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--sweet-ink:#39232d;--sweet-pink:#ff8fbd;--sweet-blush:#fff0f5;--sweet-cream:#fff9ef;--sweet-red:#c95779;--sweet-green:#73856a;--sweet-yellow:#ffdb8e}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{font-family:'Manrope',sans-serif;background:var(--sweet-cream);color:var(--sweet-ink);line-height:1.65}
+img{border-radius:0}
+header{min-height:550px;display:flex;align-items:center;justify-content:center;text-align:left;padding:70px 8%;background:var(--sweet-pink);color:var(--sweet-ink);overflow:hidden;position:relative}
+header:before{content:"";position:absolute;width:420px;height:420px;border:1px solid #39232d2c;border-radius:50%;right:7%;top:12%;box-shadow:0 0 0 25px #39232d0b,0 0 0 60px #39232d08}
+header:after{content:"♡";position:absolute;right:13%;top:14%;font:150px/1 'DM Serif Display',serif;color:#fff9ef8c;transform:rotate(15deg)}
+header .hero{position:relative;z-index:1;width:min(1100px,100%);margin:0 auto}
+header .hero-content{max-width:690px}
+header .hero-content:before{content:"FEITO COM CARINHO · DESDE 2024";display:block;margin-bottom:25px;font:10px 'DM Mono',monospace;letter-spacing:1.5px;color:#753a52}
+header .hero-content h1{font:400 clamp(54px,8vw,100px)/.91 'DM Serif Display',serif;letter-spacing:-2px;max-width:700px}
+header .hero-content p{font-size:15px;margin:23px 0;color:#583044}
+header .btn{display:inline-flex;align-items:center;gap:20px;margin-top:15px;padding:14px 20px;border-radius:0;background:var(--sweet-ink);color:var(--sweet-cream);font:700 11px 'Manrope',sans-serif;text-decoration:none;transition:transform .2s,background .2s}
+header .btn:after{content:"↗";font-size:17px}
+header .btn:hover{background:var(--sweet-red);transform:translateY(-3px)}
+.mais-vendidos,.galeria,.testemunhos,.contato{padding:85px 7%;background:var(--sweet-cream);text-align:left;box-shadow:none}
+.mais-vendidos h2,.galeria h2,.testemunhos h2,.contato h2,.sobre-dona-laura h2{font:400 clamp(40px,6vw,66px)/.98 'DM Serif Display',serif;letter-spacing:-1px;color:var(--sweet-ink);margin-bottom:38px}
+.mais-vendidos h2:after,.galeria h2:after{content:" ✳";font:32px 'Manrope',sans-serif;color:var(--sweet-red)}
+.produtos{max-width:1250px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.produto{padding:0 0 22px;background:#fff;border:1px solid #39232d13;border-radius:0;box-shadow:none;text-align:left;cursor:pointer;overflow:hidden;transition:transform .25s,border-color .25s}
+.produto:hover{transform:translateY(-6px);box-shadow:none;border-color:var(--sweet-pink)}
+.produto img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:0;margin-bottom:18px;transition:transform .4s}
+.produto:hover img{transform:scale(1.025)}
+.produto h3,.produto p,.produto .preco{margin-left:18px;margin-right:18px}
+.produto h3{font:400 25px/1.05 'DM Serif Display',serif;color:var(--sweet-ink);margin-bottom:8px}
+.produto p{font-size:12px;color:#82727a;min-height:40px}
+.preco{display:block;font:500 13px 'DM Mono',monospace;color:var(--sweet-red);margin-top:14px}
+.sobre-dona-laura{padding:90px 7%;background:var(--sweet-blush);text-align:left;box-shadow:none}
+.sobre-dona-laura h2{max-width:780px}
+.sobre{display:grid;grid-template-columns:minmax(220px,.65fr) 1fr;align-items:center;gap:45px;max-width:1100px}
+.sobre img{width:100%;max-width:390px;height:380px;object-fit:cover;border-radius:0;border:8px solid #fff}
+.sobre p{font-size:14px;color:#705b65;max-width:620px;padding:0}
+.sobre img:hover{transform:rotate(-1deg) scale(1.01)}
+.galeria{background:var(--sweet-cream)}
+.galeria-container{grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.galeria-item{padding:0 0 18px;background:#fff;border:1px solid #39232d12;border-radius:0;box-shadow:none;text-align:left;overflow:hidden}
+.galeria-item:hover{transform:translateY(-5px);box-shadow:none}
+.galeria-item img{width:100%;height:220px;object-fit:cover;border-radius:0;margin:0;transition:transform .35s}
+.galeria-item:hover img{transform:scale(1.03)}
+.galeria-item p{padding:0 17px;font-size:12px;color:#82727a}
+.testemunhos{background:#d4ffcf}
+.testemunhos h2{max-width:600px}
+.testemunhos-container{grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.testemunhos-container blockquote{padding:25px;background:#f7fff4;border-left:3px solid var(--sweet-green);text-align:left}
+.testemunhos-container blockquote p{font:italic 20px/1.25 'DM Serif Display',serif;color:var(--sweet-ink)}
+.testemunhos-container blockquote footer{padding:18px 0 0;background:transparent;color:var(--sweet-green);font:9px 'DM Mono',monospace;text-align:left}
+.contato{background:var(--sweet-ink);color:var(--sweet-cream)}
+.contato h2{color:var(--sweet-cream)}
+.contato>p{color:#d6bdc8;font-size:13px;margin:-20px 0 30px}
+.contato form{max-width:600px;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.contato input,.contato textarea{width:100%;padding:14px 15px;border:1px solid #ffffff32;border-radius:0;background:#ffffff0a;color:var(--sweet-cream);font:12px 'Manrope',sans-serif;outline:none}
+.contato input:focus,.contato textarea:focus{border-color:var(--sweet-pink)}
+.contato textarea{grid-column:1/-1;min-height:130px;resize:vertical}
+.contato button{grid-column:1/-1;justify-self:start;padding:14px 24px;border-radius:0;background:var(--sweet-pink);color:var(--sweet-ink);font:700 12px 'Manrope',sans-serif}
+.contato button:hover{background:var(--sweet-yellow)}
+body>footer{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;padding:24px 7%;background:#29151f;color:#d6bdc8;font:10px 'DM Mono',monospace;text-align:left}
+body>footer a{color:var(--sweet-pink);text-decoration:none}
+.modal{z-index:1000;background:#21131bcc;backdrop-filter:blur(8px)}
+.modal-content{width:min(620px,90%);margin:5vh auto;padding:28px;background:var(--sweet-cream);border-radius:0;text-align:left;border:1px solid #39232d1c}
+.modal-content h3{font:400 34px 'DM Serif Display',serif;color:var(--sweet-ink);margin:20px 0 10px}
+.modal-content img{max-height:280px;object-fit:cover;border-radius:0}
+.modal-content p{font-size:12px;color:#705b65}
+.modal-content span{color:var(--sweet-red)}
+.close{color:var(--sweet-ink);top:12px;right:17px}
+@media(max-width:700px){header{min-height:470px;padding:65px 7%}header:before{width:260px;height:260px;right:-75px;top:8%}header:after{font-size:90px;right:8%;top:8%}header .hero-content h1{font-size:clamp(48px,12vw,70px)}header .hero-content p{font-size:13px}.mais-vendidos,.galeria,.testemunhos,.contato,.sobre-dona-laura{padding:65px 6%}.produtos{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.produto{padding-bottom:15px}.produto h3{font-size:21px;margin-left:12px;margin-right:12px}.produto p,.produto .preco{margin-left:12px;margin-right:12px}.produto p{font-size:11px}.sobre{grid-template-columns:1fr;gap:25px}.sobre img{height:300px}.galeria-container{grid-template-columns:1fr 1fr;gap:10px}.galeria-item img{height:150px}.galeria-item p{font-size:11px}.testemunhos-container{grid-template-columns:1fr}.contato form{grid-template-columns:1fr}.contato textarea,.contato button{grid-column:auto}body>footer{flex-direction:column}}
+@media(max-width:390px){.produtos,.galeria-container{grid-template-columns:1fr}.produto img{aspect-ratio:5/3}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
